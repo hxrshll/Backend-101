@@ -1,0 +1,16 @@
+{
+  "name": "day-02",
+  "version": "1.0.0",
+  "description": "Welcome to Day 2 of the **Backend 101 – 30-day challenge**!\r Today, we’re diving into **HTTP**, the protocol that connects clients (like browsers or mobile apps) with servers.\r You'll also learn to test API endpoints using **Postman**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
