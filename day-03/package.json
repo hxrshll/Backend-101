@@ -1,0 +1,16 @@
+{
+  "name": "day-03",
+  "version": "1.0.0",
+  "description": "Welcome to Day 3 of the **Backend 101 – 30-day challenge**!\r Today, we dive into RESTful APIs, the most popular way of structuring and interacting with backend data. You’ll learn the essential CRUD operations (Create, Read, Update, Delete) and implement them with Express.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
