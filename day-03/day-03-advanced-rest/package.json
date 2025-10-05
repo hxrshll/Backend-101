@@ -1,0 +1,20 @@
+{
+  "name": "day-03-advanced-rest",
+  "version": "1.0.0",
+  "description": "Welcome to Day 3.1 of the Backend 101 – 30-day challenge!\r Today we go beyond basic CRUD and explore RESTful API design principles, versioning, filtering, headers, caching, and error handling, with a hands-on example.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
