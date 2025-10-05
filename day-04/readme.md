@@ -1,6 +1,10 @@
 
 # Day 4: Web Frameworks and Routing
 
+Welcome to Day 4 of the Backend 101 – 30-day challenge! Today, you’ll explore web frameworks and routing, the backbone of backend application structure. You’ll learn how to define routes, use middleware, handle parameters, and organize your code with Express.js. By the end, you’ll be able to build robust APIs and understand how requests flow through your server.
+
+---
+
 ### Table of Contents
 1. [What is a Web Framework?](#what-is-a-web-framework)
 2. [Routing in Express](#routing-in-express)
