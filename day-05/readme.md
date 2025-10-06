@@ -140,7 +140,7 @@ await User.findByIdAndDelete(id);
 
 ## Visual Flow
 
-![Backend to Database Flow](./assets/be-db.png)
+![Backend to Database Flow](./assets/BE-DB.png)
 
 ---
 
