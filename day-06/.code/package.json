@@ -1,0 +1,11 @@
+{
+  "name": "day06-auth-demo",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
