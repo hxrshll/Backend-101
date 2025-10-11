@@ -1,0 +1,16 @@
+{
+  "name": "day-10-nosql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "createUser": "node scripts/createUser.js",
+    "createPost": "node scripts/createPost.js",
+    "readPosts": "node scripts/readPosts.js",
+    "updatePost": "node scripts/updatePost.js",
+    "deleteUser": "node scripts/deleteUser.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mongoose": "^7.0.0"
+  }
+}
