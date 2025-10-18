@@ -1,0 +1,7 @@
+### Test Queue - User Registration
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "test@example.com"
+}
