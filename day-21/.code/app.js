@@ -11,6 +11,8 @@ app.use(tracker);
 app.post("/signup", limiter, async (req, res) => {
   const { email } = req.body;
 
+  console.log("Adding job to queue:", email);
+
   signupRequests.inc();
   await emailQueue.add({ email });
 

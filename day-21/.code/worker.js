@@ -1,9 +1,25 @@
-async function sendWelcomeEmail(email) {
-  console.log(`Sending welcome email to ${email}`);
+const Queue = require("bull");
+const Redis = require("ioredis");
 
-  await new Promise(resolve => setTimeout(resolve, 2000));
+const redis = new Redis({
+  host: process.env.REDIS_HOST || "127.0.0.1",
+  port: 6379
+});
 
-  console.log(`Email sent to ${email}`);
-}
+const emailQueue = new Queue("email", {
+  redis: {
+    host: process.env.REDIS_HOST || "127.0.0.1",
+    port: 6379
+  }
+});
 
-module.exports = sendWelcomeEmail;
+console.log("Worker started. Waiting for jobs...");
+
+emailQueue.process(async (job) => {
+  console.log("Processing job:", job.data);
+
+  // simulate email sending
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
+  console.log("Email sent to", job.data.email);
+});
