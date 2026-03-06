@@ -1,0 +1,27 @@
+services:
+
+  api:
+    build:
+      context: ../../..
+      dockerfile: day-22/.code/docker/dockerfile.api
+    ports:
+      - "3000:3000"
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  worker:
+    build:
+      context: ../../..
+      dockerfile: day-22/.code/docker/dockerfile.worker
+    environment:
+      - REDIS_HOST=redis
+    command: node .code/worker.js
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"

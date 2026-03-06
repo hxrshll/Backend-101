@@ -1,0 +1,13 @@
+FROM node:18
+
+WORKDIR /app
+
+COPY day-21/package*.json ./
+
+RUN npm install
+
+COPY day-21 .
+
+EXPOSE 3000
+
+CMD ["node", ".code/app.js"]

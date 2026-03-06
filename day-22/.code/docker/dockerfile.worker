@@ -1,0 +1,11 @@
+FROM node:18
+
+WORKDIR /app
+
+COPY day-21/package*.json ./
+
+RUN npm install
+
+COPY day-21 .
+
+CMD ["node", ".code/worker.js"]
